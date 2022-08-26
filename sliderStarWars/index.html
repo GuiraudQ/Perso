@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="contain">
+            <div class="left">
+                <div class="logo">
+                    <img src="Vector2.png" alt="logo star wars" data-slide="1" class="logo1 active"/>
+                    <img src="Vector1.png" alt="logo star wars" data-slide="2" class="logo2"/>
+                    <img src="Vector.png" alt="logo star wars" data-slide="3" class="logo3"/>
+                </div>
+                <div class="titles">
+                    <h1 data-slide="1" class="active">Un nouvel espoir</h1>
+                    <h1 data-slide="2">L'empire contre-attaque</h1>
+                    <h1 data-slide="3">Le retour du jedi</h1>
+                </div>
+                <div class="description">
+                    <p data-slide="1" class="active">C'est le premier opus de la saga Star Wars par sa date de sortie, mais le quatrième selon l'ordre chronologique de l'histoire.</p>
+                    <p data-slide="2">Le maléfique Empire galactique construit une nouvelle station spatiale Étoile de la mort pour anéantir définitivement l'Alliance rebelle. </p>
+                    <p data-slide="3">Le maléfique Empire galactique construit une nouvelle station spatiale Étoile de la mort pour anéantir définitivement l'Alliance rebelle.</p>
+                </div>
+                <div class="years">
+                    <div>
+                        <h2 class="mille active" data-years="1">1</h2>
+                        <h2 class="cent active" data-years="1">9</h2>
+                        <h2 class="dix active" data-years="1">7</h2>
+                        <h2 class="unit active" data-years="1">7</h2>
+                    </div>
+                    <div>
+                        <h2 class="mille" data-years="2">1</h2>
+                        <h2 class="cent" data-years="2">9</h2>
+                        <h2 class="dix" data-years="2">8</h2>
+                        <h2 class="unit" data-years="2">0</h2>
+                    </div>
+                    <div>
+                        <h2 class="mille" data-years="3">1</h2>
+                        <h2 class="cent" data-years="3">9</h2>
+                        <h2 class="dix" data-years="3">8</h2>
+                        <h2 class="unit" data-years="3">3</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image">
+                    <img src="sw1.png" alt="affiche star wars" data-slide="1" class="active"/>
+                    <img src="sw2.png" alt="affiche star wars" data-slide="2"/>
+                    <img src="sw3.png" alt="affiche star wars" data-slide="3"/>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="leftArrow" onclick="turnLeft()">
+                <img src="Arrow.png" alt="Fleche a gauche"/>
+            </div>
+            <div class="rightArrow" onclick="turnRight()">
+                <img src="Arrow.png" alt="Fleche a droite"/>
+            </div>
+            <div class="stepper">
+                <ul>
+                    <li data-stepper="1" class="active">
+                        <div class="line" data-stepper="2"></div>
+                    </li>
+                    <li data-stepper="2">
+                        <div class="line" data-stepper="3"></div>
+                    </li>
+                    <li data-stepper="3">
+                        <div class="line" data-stepper="4"></div>
+                    </li>
+                    <li data-stepper="4">
+                        <div class="line" data-stepper="5"></div>
+                    </li>
+                    <li data-stepper="5">
+                        <div class="line" data-stepper="6"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+    <script src="app.js"></script>
+</html>

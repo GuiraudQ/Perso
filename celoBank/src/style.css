@@ -1,0 +1,427 @@
+/*------------------------------------------------------------------------------------ * Reset * ------------------------------------------------------------------------------------*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*------------------------------------------------------------------------------------ * General * ------------------------------------------------------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(to right , rgb(19, 1, 53), rgb(19, 1, 53),rgb(19, 1, 53), rgba(153, 145, 102,0.2));
+    background-color: rgb(19, 1, 53);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+section {
+    padding: 0 40px;
+}
+h1,h2 {
+    color: white;
+    line-height: 150%;
+    font-weight: 700;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    color: rgb(230, 230, 230);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 180%;
+}
+.violet-btn {
+    background-color: #8C33FD;
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(140, 51, 253, 0.8),
+                0 0 20px rgba(140, 51, 253, 0.3),
+                inset 0 0 20px rgba(241, 73, 247, 0.2) ;
+    color: white;
+    font-weight: bold;
+}
+.tiret {
+    height: 2px;
+    width: 12px;
+    margin-right: 10px;
+    background-color: white;
+}
+.comment {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/*------------------------------------------------------------------------------------ * nav * ------------------------------------------------------------------------------------*/
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    background-color: rgb(19, 1, 53);
+    z-index: 10;
+}
+nav > div {
+    padding: 15px 40px;
+}
+.logo h1 {
+    font-size: 20px;
+}
+.menu {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .burger .miam{
+    width: 20px;
+    height: 2px;
+    margin: 10px 0;
+    background-color: white;
+}
+.menu-link, .menu-login {
+    display: none;
+}
+.menu-login{
+    flex-direction: column;
+}
+.menu-login > *{
+    margin: 5vh 0;
+}
+.menu-link ul {
+    display: flex;
+    flex-direction: column;
+}
+.menu-link ul li {
+    margin: 5vh 0;
+}
+.menu-link ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*------------------------------------------------------------------------------------ * Product * ------------------------------------------------------------------------------------*/
+#product {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+#product .left {
+    text-align: center;
+}
+#product .left > * {
+    margin: 30px 0;
+}
+#product .left .links{
+    display: none;
+}
+#product form {
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px;
+
+    background-color: rgb(12, 0, 36);
+    border-radius: 20px;
+}
+#product form input {
+    border: none;
+    background-color: transparent;
+    color: rgb(230, 230, 230);
+    font-size: 15px;
+}
+#product form input:focus{
+    outline: none;
+}
+#product .right {
+    display: none;
+}
+
+/*------------------------------------------------------------------------------------ * Pricing * ------------------------------------------------------------------------------------*/
+
+#pricing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#pricing .desc h2 {
+    width: 400px;
+}
+#pricing .desc p {
+    display: none;
+}
+
+#pricing .card-container {
+    width: 320px;
+    height: 320px;
+    margin: 20px 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#pricing .card-container .card {
+
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(12, 0, 36);
+    border-radius: 20px;
+
+    animation: sliding 20s ease-in-out 0s infinite;
+}
+#pricing .card-container .card img {
+    width: 200px;
+    height: auto;
+}
+
+/*------------------------------------------------------------------------------------ * animation * ------------------------------------------------------------------------------------*/
+
+
+@keyframes sliding {
+    0% {
+        transform: translateX(320px);
+        opacity: 0;
+    }
+    2.5%{
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(320px);
+    }
+    40% {
+        transform: translateX(0px);
+    }
+    60% {
+        transform: translateX(0px);
+    }
+    80% {
+        transform: translateX(-320px);
+    }
+    97.5% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-320px);
+        opacity: 0;
+    }
+}
+
+/*------------------------------------------------------------------------------------ * responsive * ------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 900px){
+    /*------------------------------------------------------------------------------------ * general * ------------------------------------------------------------------------------------*/
+
+    section {
+        padding: 0 10vw;
+    }
+
+    /*------------------------------------------------------------------------------------ * nav * ------------------------------------------------------------------------------------*/
+
+    nav{
+        width: 90vw;
+        padding: 0 5vw;
+        align-items: center;
+    }
+    nav > div {
+        padding: 0 40px;
+    }
+    .menu {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateX(-100px);
+    }
+    .menu .burger{
+        display: none;
+    }
+    .menu-link {
+        display: block;
+    }
+    .menu-link ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+    }
+    .menu-link ul li {
+        margin: 0 20px;
+
+    }
+    .menu-link ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .menu-login {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu-login > * {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    /*------------------------------------------------------------------------------------ * Product * ------------------------------------------------------------------------------------*/
+
+    #product {
+        display: grid;
+        grid-template-columns: repeat(2, 47.5%);
+        gap: 5%;
+        justify-content: center;
+    }
+    #product .left {
+        text-align: left;
+    }
+    #product .left .mini-title {
+        display: flex;
+        align-items: center;
+    }
+    #product .left p .tiret {
+        display: block;
+    }
+    #product form {
+        height: max-content;
+        flex-direction: row;
+    }
+    #product form a {
+        width: max-content;
+    }
+    #product .left .links{
+        display: block;
+    }
+    #product .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #product .circle-bg {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        right:  15vw;
+        top: 60px;
+
+        border-radius: 50%;
+        background: linear-gradient(135deg , rgb(153, 145, 102,0.2) , rgba(12, 0, 36, 0));
+        z-index: -1;
+    }
+    #product .right img{
+        width: 300px;
+        height: auto;
+    }
+
+    /*------------------------------------------------------------------------------------ * Pricing * ------------------------------------------------------------------------------------*/
+
+    #pricing .desc {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #pricing .desc > *{
+        width: 450px;
+        text-align: left;
+    }
+    #pricing .desc h2 {
+        width: 550px;
+    }
+    #pricing .desc p {
+        display: block;
+    }
+    #pricing .card-container {
+        width: 960px;
+    }
+    #pricing .card-container .card {
+        animation: none;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    /*------------------------------------------------------------------------------------ * general * ------------------------------------------------------------------------------------*/
+
+    section {
+        padding: 0 20vw;
+    }
+
+    /*------------------------------------------------------------------------------------ * nav * ------------------------------------------------------------------------------------*/
+
+    nav{
+        width: 70vw;
+        padding: 0 15vw;
+    }
+    .menu {
+        transform: translateX(0px);
+    }
+    .menu-link ul li {
+        margin: 0 25px;
+    }
+}

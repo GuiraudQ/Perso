@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+#morpion {
+    background: lavender;
+    width: 800px;
+    height: 800px;
+    border-radius: 20px;
+    margin-top: 50px;
+
+    display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.case{
+    width: 80%;
+    height: 80%;
+    background-color: powderblue;
+}
+.case:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.case:active{
+    box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.3);
+}

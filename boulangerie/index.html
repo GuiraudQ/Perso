@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boulangerie</title>
+
+    <link rel="stylesheet" href="miniReset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="leftPart">
+            <img src="logoBoulangerie.png" alt="Logo de la boulangerie">
+            <div id="headerDescription">
+                <h1>Artisan Boulanger Traditionel</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptas numquam animi rerum, magni distinctio totam natus eos eligendi vero reprehenderit nisi sunt adipisci ab optio? Aperiam commodi esse a, exercitationem, minus ea tempora quo ratione aspernatur vitae eaque eligendi?</p>
+                <a href="#" class="myBtn">Shop Now</a>
+            </div>
+            <div id="headerLocal">
+                <i class="gg-pin"></i>
+                <p>3 rue des boulanger <br>Paris france</p>
+            </div>
+        </div>
+        <nav>
+            <p id="num">+33 6 77 98 29 01</p>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div id="caisse">
+                <i class="gg-shopping-cart"></i>
+                <div id="minibulle"></div>
+            </div>
+        </nav>
+        <div id="rightPart">
+            <div id="headerBread">
+                <h2>Pain de campagne de fou</h2>
+                <h2>5.00$</h2>
+            </div>
+            <div id="headerNetwork">
+                <i class="gg-facebook"></i>
+                <i class="gg-instagram"></i>
+            </div>
+            <div id="headerVideo" onclick="document.getElementById('maVideo').style.display='flex';">
+                <p>Regardez comment <br> nous faisons</p>
+                <i class="gg-play-button-o"></i>
+            </div>
+        </div>
+        <div id="maVideo" onclick="document.getElementById('maVideo').style.display='none';">
+            <div id="fermerVid" ></div>
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/kIXnMoaFCrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </header>
+</body>
+</html>
